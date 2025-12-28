@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>PDF Chatbot (RAG)</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>📄 Ask Your PDF</h2>
+<div class="chat-container">
+    <div class="chat-header">
+        📄 PDF Chatbot
+        <span>Ask questions from your document</span>
+    </div>
 
-<div id="chat-box"></div>
+    <div id="chat-box"></div>
 
-<input id="user-input" type="text" placeholder="Ask something from the PDF..." />
-<button onclick="sendQuestion()">Ask</button>
+    <div class="chat-input">
+        <input id="user-input" type="text" placeholder="Ask something from the PDF..." />
+        <button onclick="sendQuestion()">➤</button>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
